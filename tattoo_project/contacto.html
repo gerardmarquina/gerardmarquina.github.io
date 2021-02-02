@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap" rel="stylesheet">
+    <title>
+        Tattoo Studio Barcelona
+    </title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <video autoplay muted id="bgvideo">
+            <source src="img/bg.mp4" type="video/mp4">
+        </video>
+        <div class="index_content">
+            <div class="blur_bg">
+
+                <header>
+                    <h1>
+                        Tattoo Design Barcelona
+                    </h1>
+                    <img alt="logo" src="img/tattoo.svg"> 
+                    <nav class="col-3">
+                    </nav>
+                    <ul>
+                        <li onclick="setLanguaje('en')">
+                            <span class="en">English</span>
+                            <span class="es">Inglés</span>
+                            <span class="cat">Catalan</span>
+                        </li>
+                        <li onclick="setLanguaje('es')">
+                            <span class="en">Spanish</span>
+                            <span class="es">Castellano</span>
+                            <span class="cat">Castella</span>
+                        </li>
+                        <li onclick="setLanguaje('cat')">
+                            <span class="en">Catalan</span>
+                            <span class="es">Catalan</span>
+                            <span class="cat">Català</span>
+                        </li>
+                    </ul>
+                    <nav>
+                        <a class="es" href="index.html">Inicio</a>
+                        <a class="en" href="index.html">Start</a>
+                        <a class="cat" href="index.html">Inici</a>
+                        <a class="select es" href="contacto.html">Contacto</a>
+                        <a class="select en" href="contacto.html">Contact</a>
+                        <a class="select cat" href="contacto.html">Contacte</a>
+                        <a class="es" href="artistas.html">Artistas</a>
+                        <a class="en" href="artistas.html">Artists</a>
+                        <a class="cat" href="artistas.html">Artistes</a>
+                    </nav>
+                </header>
+            <section class="row3_col0">
+                <form>
+                <article style="margin-bottom: 1em;">
+                    <p class="es"><strong>Envianos un mensaje con la idea de tu tatuaje y nos pondremos en contacto contigo para concertar una sesión.</strong></p>
+                    <p class="en"><strong>Send a message with idea of tattoo and we will wear in contact with you for specify a date for a sesion.</strong></p>
+                    <p class="cat"><strong>Envia'ns un missatge amb la teva idea de tatuatge i ens ficarem en contacte amb tu per concretar una sessió.</strong></p>
+                    <input type="text" placeholder="mail@mail.com" id="mailinput">
+                </article>
+                <article>
+                    <textarea id="messageinput" name="message" rows="20" placeholder="Tu mensaje aquí." style="width: 100%;"></textarea>
+                </article>
+                <article style="text-align: center; margin-top: 1em;">
+                    <input onclick="saveFile()" class="es" type="submit" name="submit" value="Enviar">
+                    <input onclick="saveFile()" class="en" type="submit" name="submit" value="Submit">
+                    <input onclick="saveFile()" class="cat" type="submit" name="submit" value="Enviar">
+                </article>
+                </form>
+            </section>
+            <footer>
+                <p>Design by Gerard Marquina Rubio, Miquel Lopez, Joan Navarro</p>
+                <!-- But mainly by ^^ -->
+            </footer>
+        </div>
+        </div>
+    <script src="js/main.js"></script>
+    </body>
+</html>
